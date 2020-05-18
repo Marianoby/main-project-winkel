@@ -1,0 +1,53 @@
+<html>
+<head></head>
+<body>
+    <h4 align="center">ADD PRODUCTS</h4>
+    <form name="AddProducts">
+        <table align="center">
+            <tr>
+                <td> ITEM NAME:</td>
+                <TD><input [value]="a_name" (input)="a_name=$event.target.value" type="text" placeholder="ITEM NAME"></TD>
+            </tr>
+            <tr>
+                <td>CATEGORY:</td>
+                <td><select id="category" [value]="a_category" (input)="a_category=$event.target.value">
+                    <option>Cleaning Products</option>
+                    <option>Personal Care Products</option>
+                    <option>Nuts and Dry Fruits</option>
+                    <option>Cookies and Buscuits</option>
+                    <option>Chocolates</option>
+                    <option>Beverages</option>
+                    <option>Daily Essentials</option>
+                    <option>Rice Products</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>BRAND:</td>
+                <td><input [value]="a_brand" (input)="a_brand=$event.target.value" type="text" placeholder="BRAND"></td>
+            </tr>
+            <tr>
+                <td>PRICE:</td>
+                <td><input [value]="a_price" (input)="a_price=$event.target.value" type="number" placeholder="PRICE"></td>
+            </tr>
+            <tr>
+               
+            </tr>
+            <tr>
+                <td>QUANTITY AVAILABLE:</td>
+                <td><input [value]="a_quantity" (input)="a_quantity=$event.target.value" type="text" placeholder="QUANTITY"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="add" value="ADD" (click)="additem()"></td>
+                <td><input type="reset" name="reset" value="RESET"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+
+</html>
+
+
+
+

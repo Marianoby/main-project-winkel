@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<body>
+    <h4 align="center">CUSTOMER REGISTRATION</h4>
+    <form name="customerReg">
+        <table align="center">
+            <tr>
+                <td>NAME:</td>
+                <TD><input [value]="r_name" (input)="r_name=$event.target.value" type="text" placeholder="name"></TD>
+            </tr>
+            <tr>
+                <td>ADDRESS:</td>
+                <td><input [value]="r_address" (input)="r_address=$event.target.value" type="text" placeholder="address"></td>
+            </tr>
+            <tr>
+                <td>PHONE NUMBER:</td>
+                <td><input [value]="r_phone" (input)="r_phone=$event.target.value" type="number" placeholder="phoneno:"></td>
+            </tr>
+            <tr>
+                <td>EMAIL:</td>
+                <td><input [value]="r_email" (input)="r_email=$event.target.value" type="email" placeholder="email"></td>
+            </tr>
+            <tr>
+                <td>USERNAME:</td>
+                <td><input [value]="r_username" (input)="r_username=$event.target.value" type="text" placeholder="username"></td>
+            </tr>
+            <tr>
+                <td>PASSWORD:</td>
+                <td><input [value]="r_password" (input)="r_password=$event.target.value" type="password" placeholder="password"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="register" value="REGISTER" (click)="register()"></td>
+                <td><input type="reset" name="reset" value="RESET"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+
+</html>
+
+

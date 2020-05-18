@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col s10 offset-s1">
+        <h4>New Product</h4>
+    </div>
+    <div class="col s10 offset-s1">
+        <div class="row">
+            <div class="input-field col s12">
+                <input [value]="a_name" (input)="a_name=$event.target.value" type="text" id="name" class="validate">
+                <label for="name">Product Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12">
+                <label>Category</label>
+                <select [value]="a_category" (input)="a_category=$event.target.value" class="browser-default">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option>Cleaning Products</option>
+                    <option>Personal Care Products</option>
+                    <option>Nuts and Dry Fruits</option>
+                    <option>Cookies and Buscuits</option>
+                    <option>Chocolates</option>
+                    <option>Beverages</option>
+                    <option>Daily Essentials</option>
+                    <option>Rice Products</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input [value]="a_brand" (input)="a_brand=$event.target.value" type="text" id="brand" class="validate">
+                <label for="brand">Brand</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="prize" [value]="a_price" (input)="a_price=$event.target.value" type="number"
+                    class="validate">
+                <label for="prize">Prize</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="quantity" [value]="a_quantity" (input)="a_quantity=$event.target.value" type="text"
+                    class="validate">
+                <label for="quantity">Quantity</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <a class="btn waves-effect waves-light" (click)="additem()" name="login">ADD
+                    <i class="material-icons left">add</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

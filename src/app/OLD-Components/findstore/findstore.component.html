@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+    <h4 align="center">SELECT STORE</h4>
+    <form>
+        <table align="center">
+            <tr>
+                <td>TYPE OF STORE:</td>
+                <td><select id="typesofstore"  (change)="findshop($event.target.value)">
+                    <option>Super Market</option>
+                    <option>Hyper Market</option>
+                    <option>Convinient Store</option>
+                    <option>Grocery Store</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>SHOP NAME</td>
+                <td>SHOP ADDRESS</td>
+            </tr>
+            
+            <tr *ngFor="let shop of shoplist">
+                <td>{{shop.name}}</td>
+                <td>{{shop.address}}</td>
+            </tr>
+       
+
+        </table>
+    </form>
+</body>
+
+
+</html>
+
+
+
+
